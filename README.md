@@ -5,7 +5,7 @@
 ## Use Case
 
 * [Create_Cursor_Object](#Create_Cursor_Object)
-  * [setup_default_value()](#setup_default_value(kwargs**))
+  * [Setup_Value](#Setup_Value)
   * setup_period
   * setup_rules
   * save_task
@@ -25,5 +25,8 @@ from GroupSchedule import OfferGroupCursor
 
 cursor = OfferGroupCursor(1544)
 ```
+---
+### Setup_Value
 
-### setup_default_value(kwargs**)
+***class*** ___setup_default_value(kwargs**)___
+
