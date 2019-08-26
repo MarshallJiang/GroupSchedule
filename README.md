@@ -28,5 +28,5 @@ cursor = OfferGroupCursor(1544)
 ---
 ### Setup_Value
 
-***class*** ___setup_default_value(kwargs**)___
+***function*** ___setup_default_value(kwargs**)___
 
