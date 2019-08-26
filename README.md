@@ -4,9 +4,9 @@
 
 ## Use Case
 
-* [Create Cursor Object](#Create Cursor Object)
-  * setup value(
-  * setup period
+* [Create_Cursor_Object](#Create_Cursor_Object)
+  * setup_value
+  * setup_period
 push
 
-###Create Cursor Object
+###Create_Cursor_Object
