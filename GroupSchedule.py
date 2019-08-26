@@ -7,10 +7,10 @@ import pymysql
 import urllib.parse
 import re
 
-database = pymysql.connect(host='54.238.199.106', port=3306, user='Ops', password='iloveShopBack!4', database='ShopBack', charset='utf8', autocommit='true')
+database = pymysql.connect(host='*.*.*.*', port=3306, user='Ops', password='*', database='*', charset='utf8', autocommit='true')
 api_url = 'https://shopback.api.hasoffers.com/Apiv3/json'
 config_params = {
-    'NetworkToken' : 'NETJTqTrjj38XObdBhygFOQ2ULa1V2'
+    'NetworkToken' : '*'
 }
 '''
 v 1.02 **
