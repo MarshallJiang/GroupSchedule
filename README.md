@@ -4,7 +4,7 @@
 
 ## Use Case
 
-* [create client](#create_client)
+* [OfferObject](#class-OfferGroupCursor(offer_id,-kwargs**))
   * [setup_value](#setup_value)
   * setup_period
   * setup_rules
@@ -12,13 +12,10 @@
   
 ### structure
 
->OfferCursor
->>Groups
->>>Rules
 
 
 
-#### *class* OfferGroupCursor(offer_id, kwargs**)
+#### class _OfferGroupCursor(offer_id, kwargs**)_
 
 #### Parameters :
 | Parameter | Type | Required | Description |
@@ -42,7 +39,7 @@ None
 
 ---
 
-#### *function* group_display(kwargs**)
+#### function _group_display(kwargs**)_
 
 ###### Search groups by names or value and return dictionary information.
 
