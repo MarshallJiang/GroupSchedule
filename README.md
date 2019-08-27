@@ -4,13 +4,13 @@
 
 ## Use Case
 
-* [Create Cursor Object](#Create_Cursor_Object)
-  * [Setup_Value](#Setup_Value)
+* [create client](#create_client)
+  * [setup_value](#setup_value)
   * setup_period
   * setup_rules
   * save_task
 
-### Create Cursor Object
+### create_client
 
 *class* ___OfferGroupCursor(offer_id, kwargs**)___
 
@@ -36,7 +36,7 @@ cursor = OfferGroupCursor(1544)
 
 
 ---
-### Setup_Value
+### setup_value
 
 *function* ___setup_default_value(kwargs**)___
 
