@@ -4,7 +4,7 @@
 
 ## Use Case
 
-* [OfferObject](#class-OfferGroupCursor(offer_id,-kwargs**))
+* [OfferObject](#class-offergroupcursoroffer_id-kwargs)
   * [setup_value](#setup_value)
   * setup_period
   * setup_rules
