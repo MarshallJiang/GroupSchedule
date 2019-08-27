@@ -16,9 +16,9 @@
 >>Groups
 >>>Rules
 
-### create_client
 
-###### *class* ___OfferGroupCursor(offer_id, kwargs**)___
+
+#### *class* OfferGroupCursor(offer_id, kwargs**)
 
 #### Parameters :
 | Parameter | Type | Required | Description |
@@ -42,7 +42,7 @@ None
 
 ---
 
-*function* ___group_display(kwargs**)___
+#### *function* group_display(kwargs**)
 
 ###### Search groups by names or value and return dictionary information.
 
