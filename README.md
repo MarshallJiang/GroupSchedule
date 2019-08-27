@@ -9,6 +9,12 @@
   * setup_period
   * setup_rules
   * save_task
+  
+### structure
+
+>OfferCursor
+>>Groups
+>>>Rules
 
 ### create_client
 
