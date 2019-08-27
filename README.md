@@ -18,7 +18,7 @@
 
 ### create_client
 
-*class* ___OfferGroupCursor(offer_id, kwargs**)___
+###### *class* ___OfferGroupCursor(offer_id, kwargs**)___
 
 #### Parameters :
 | Parameter | Type | Required | Description |
