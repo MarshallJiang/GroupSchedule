@@ -20,7 +20,7 @@
 |offer_id|_Int_|_Required_|Id of the offer which will be used to initialize the object with attributes|
 |branch_at|_String_|_Optional_|To get the offer setting in specific moment|
 
-```Pythone
+```Python
 from GroupSchedule import OfferGroupCursor
 
 cursor = OfferGroupCursor(1544)
