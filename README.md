@@ -5,7 +5,7 @@
 ## Use Case
 
 * [OfferObject](#class-offergroupcursoroffer_id-kwargs)
-  * [setup_value](#setup_value)
+  * [group_display()](#group_displaykwargs)
   * setup_period
   * setup_rules
   * save_task
