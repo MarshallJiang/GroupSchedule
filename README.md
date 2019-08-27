@@ -20,8 +20,8 @@
 #### Parameters :
 | Parameter | Type | Required | Description |
 |----|----|----|----|
-|_offer_id_|_Int_|_Required_|_Id of the offer which will be used to initialize the object with attributes_|
-|_branch_at_|_String_|_Optional_|_To get the offer setting in specific moment_|
+|_offer_id_|_int_|_Required_|_Id of the offer which will be used to initialize the object with attributes_|
+|_branch_at_|_string_|_Optional_|_To get the offer setting in specific moment_|
 
 ```Python
 from GroupSchedule import OfferGroupCursor
@@ -46,9 +46,9 @@ None
 #### Parameters :
 | Parameter | Type | Required | Description |
 |----|----|----|----|
-|_text_filter_|_String_|_Optional_|_Key for group name search_|
-|_value_filter_|_String_|_Optional_|_Key for group value search_|
-|_return_object_|_String_|_Optional_|_Return list with eligible groups_|
+|_text_filter_|_string_|_Optional_|_Key for group name search_|
+|_value_filter_|_string_|_Optional_|_Key for group value search_|
+|_return_object_|_string_|_Optional_|_Return list with eligible groups_|
 
 ```Python
 groups = cursor.group_display(text_filter='AU')
@@ -81,6 +81,17 @@ groups = cursor.group_display(text_filter='AU')
   # Group object in list if return_object=True
   [GroupSchedule.Group]
 ```
+---
+
+#### function _group_append(cashflow_group_id, kwargs**)_
+
+###### add group into cursor object and define its value, at least one kind of value need to be defined.
+
+#### Parameters :
+| Parameter | Type | Required | Description |
+|----|----|----|----|
+|_percent_|_float_|_Optional_|_percent(%) value_|
+|_rate_|_float_|_Optional_|_rate($) value_|
 
 ---
 ### setup_value
