@@ -17,8 +17,8 @@
 #### Parameters :
 | Parameter | Type | Required | Description |
 |----|----|----|----|
-|offer_id|_Int_|_Required_|Id of the offer which will be used to initialize the object with attributes|
-|branch_at|_String_|_Optional_|To get the offer setting in specific moment|
+|_offer_id_|_Int_|_Required_|_Id of the offer which will be used to initialize the object with attributes_|
+|_branch_at_|_String_|_Optional_|_To get the offer setting in specific moment_|
 
 ```Python
 from GroupSchedule import OfferGroupCursor
@@ -30,7 +30,7 @@ cursor = OfferGroupCursor(1544)
 cursor = OfferGroupCursor(1544, branch_at='2019-01-01 18:00:00')
 ```
 
-*function* ___group_create(kwargs**)___
+*function* ___group_display(kwargs**)___
 
 #### Parameters :
 | Parameter | Type | Required | Description |
