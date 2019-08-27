@@ -23,7 +23,11 @@
 ```Python
 from GroupSchedule import OfferGroupCursor
 
+# get offer 1544 current setting.
 cursor = OfferGroupCursor(1544)
+
+# get offer 1544 setting at 2019-01-01 18:00:00
+cursor = OfferGroupCursor(1544, branch_at='2019-01-01 18:00:00')
 ```
 
 *function* ___group_create(kwargs**)___
