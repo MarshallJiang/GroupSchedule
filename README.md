@@ -29,10 +29,16 @@ cursor = OfferGroupCursor(1544)
 # get offer 1544 setting at 2019-01-01 18:00:00
 cursor = OfferGroupCursor(1544, branch_at='2019-01-01 18:00:00')
 ```
+#### Return :
+```Python
+None
+```
+
+---
 
 *function* ___group_display(kwargs**)___
 
-###### Search groups by names or value and return object.
+###### Search groups by names or value and return dictionary information.
 
 #### Parameters :
 | Parameter | Type | Required | Description |
@@ -41,6 +47,37 @@ cursor = OfferGroupCursor(1544, branch_at='2019-01-01 18:00:00')
 |_value_filter_|_String_|_Optional_|_Key for group value search_|
 |_return_object_|_String_|_Optional_|_Return list with eligible groups_|
 
+```Python
+groups = cursor.group_display(text_filter='AU')
+```
+
+#### Return :
+```Python
+# Dictionary in list
+[{'name': 'AU',
+  'description': 'AU Group',
+  'affiliates': [],
+  'rules': [{'id': '1234',
+    'cashflow_group_id': '2345',
+    'field': 'field7',
+    'operator': 'IN',
+    'value': ['rule_value_1'],
+    'negate': '0'},
+   {'id': '4567',
+    'cashflow_group_id': '2345',
+    'field': 'field8',
+    'operator': 'IN',
+    'value': ['rule_value_2'],
+    'negate': '1'}],
+  'cashflow_group_id': '2345',
+  'offer_id': 1544,
+  'percent': '10',
+  'rate': None,
+  'follow': 1}]
+  
+  # Group object in list if return_object=True
+  [GroupSchedule.Group]
+```
 
 ---
 ### setup_value
