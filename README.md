@@ -6,7 +6,7 @@
 
 * [OfferObject](#class-offergroupcursoroffer_id-kwargs)
   * [group_display()](#function-group_displaykwargs)
-  * setup_period
+  * [group_append()](#function-group_appendkwargs)
   * setup_rules
   * save_task
   
@@ -90,9 +90,13 @@ groups = cursor.group_display(text_filter='AU')
 #### Parameters :
 | Parameter | Type | Required | Description |
 |----|----|----|----|
+|_cashflow_group_id_|_int_|_Required_|_id of cashflowgroup object_|
 |_percent_|_float_|_Optional_|_percent(%) value_|
 |_rate_|_float_|_Optional_|_rate($) value_|
 
+```Python
+cursor.group_append(2000, percent=5.5, rate=30)
+```
 ---
 ### setup_value
 
