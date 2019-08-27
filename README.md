@@ -32,11 +32,14 @@ cursor = OfferGroupCursor(1544, branch_at='2019-01-01 18:00:00')
 
 *function* ___group_display(kwargs**)___
 
+###### Search groups by names or value and return object.
+
 #### Parameters :
 | Parameter | Type | Required | Description |
 |----|----|----|----|
-|text_filter|_String_|_Optional_|Id of the offer which will be used to initialize the object with attributes|
-|value_filter|_String_|_Optional_|To get the offer setting in specific moment|
+|_text_filter_|_String_|_Optional_|_Key for group name search_|
+|_value_filter_|_String_|_Optional_|_Key for group value search_|
+|_return_object_|_String_|_Optional_|_Return list with eligible groups_|
 
 
 ---
