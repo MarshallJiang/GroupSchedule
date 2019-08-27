@@ -4,13 +4,13 @@
 
 ## Use Case
 
-* [Create_Cursor_Object](#Create_Cursor_Object)
+* [Create Cursor Object](#Create_Cursor_Object)
   * [Setup_Value](#Setup_Value)
   * setup_period
   * setup_rules
   * save_task
 
-### Create_Cursor_Object
+### Create Cursor Object
 
 *class* ___OfferGroupCursor(offer_id, kwargs**)___
 
