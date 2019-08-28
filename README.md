@@ -9,8 +9,8 @@
   * [group_display()](#function-group_displaykwargs)
   * [group_append()](#function-group_appendcashflow_group_id-kwargs)
   * [group_remove()](#function-group_removecashflow_group_id)
-  * setup_rules
-  * save_task
+  * [setup_default_value()](#function-setup_default_value-kwargs)
+  * [setup_period()](#function-setup_period-kwargs)
   
 ### structure
 
@@ -160,10 +160,19 @@ cursor.setup_default_value(percent=10, rate=5.5)
   "percent_payout": 10
   }'
 ```
+---
+
+### setup_period(**kwargs)
+
+###### setup start and end datetime for this ready-to-push configure.
+
+#### Parameters
+| Parameter | Type | Required | Description |
+|----|----|----|----|
+|_actived_from_|_datetime string_|_Required_|_start date of this configure_|
+|_actived_to_|_datetime string_|_Required_|_end date of this configure_|
+|_is_base_|_Boolean_|_Optional_|_define an enternal configure for others fallback to, default as false_|
 
 
-### setup_value
-
-*function* ___setup_default_value(kwargs**)___
 
 
