@@ -109,7 +109,7 @@ groups = cursor.group_display(text_filter='AU')
 |_cashflow_group_id_|_int_|_Required_|_id of cashflowgroup object_|
 |_percent_|_float_|_Optional_|_percent(%) type value_|
 |_rate_|_float_|_Optional_|_rate($) type value_|
-
+|
 ```Python
 cursor.group_append(2000, percent=5.5, rate=30)
 ```
@@ -131,7 +131,14 @@ cursor.group_remove(2000)
 
 #### function _setup_default_value(kwargs**)_
 
-###### 
+###### setup default percent or rate for object
+
+#### Parameters
+| Parameter | Type | Required | Description |
+|----|----|----|----|
+|_percent_|_int_|_Optional_|_percent(%) value, default as 0_|
+|_rate_|_int_|_Optional_|_rate($) value, default as 0_|
+
 
 ### setup_value
 
