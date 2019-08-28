@@ -13,11 +13,7 @@
   * [setup_period()](#function-setup_periodkwargs)
   * [push_cursor()](#function-push_cursorkwargs)
   * [deploy_cursor()](#function-deploy_cursor)
-  
-### structure
-
-
-
+* [GroupObject](#Group)
 
 #### class _OfferGroupCursor(offer_id, **kwargs)_
 
@@ -217,8 +213,9 @@ cursor.deploy_cursor()
 ```Python
 None
 ```
-
-
-
+---
+#### Group
+###### Group Object could actually get created, since this library is providing solution on `Offer` configure setup automation, will skip the create part in case out of process.
+```
 
 
