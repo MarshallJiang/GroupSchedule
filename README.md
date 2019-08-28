@@ -194,7 +194,7 @@ None
 #### Parameters
 | Parameter | Type | Required | Description |
 |----|----|----|----|
-|_utc_| _int__ | _Optional_ | _push the configuration into database and wait for activation_ |
+|_utc_| _int_ | _Optional_ | _push the configuration into database and wait for activation_ |
 
 #### Return :
 ```Python
