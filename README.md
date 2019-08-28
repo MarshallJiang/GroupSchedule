@@ -48,7 +48,7 @@ None
 |_groups_|_list_|_list with groups object_|
 |_branch_at_|_datetime string_|_datetime of this object configure_|
 |_created_at_|_datetime string_|_datetime of creating this object_|
-|_ptype_|_string_|_payout type of this object as following ```'cpa_percentage', 'cpa_rate', 'cpa_both' ```_|
+|_ptype_|_string_|_payout type of this object as following `'cpa_percentage', 'cpa_rate', 'cpa_both' `_|
 
 
 
@@ -171,7 +171,7 @@ cursor.setup_default_value(percent=10, rate=5.5)
 |----|----|----|----|
 |_actived_from_|_datetime string_|_Required_|_start date of this configure_|
 |_actived_to_|_datetime string_|_Required_|_end date of this configure_|
-|_is_base_|_Boolean_|_Optional_|_define an enternal configure for others fallback to, default as false. if True, actived_from and actived_to will be auto adjust into min and max datetime value_|
+|_is_base_|_Boolean_|_Optional_|_define an enternal configure for others fallback to, default as `False`. if `True`, actived_from and actived_to will be auto adjust into min and max datetime value_|
 
 ```Python
 # set specific time range for this configure.
