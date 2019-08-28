@@ -1,8 +1,8 @@
 ## Solution
-**Automatically trigger and reverse the time sensitvie schedule task with input detail accordingly**, will introduce use case in below topic and things that need to be noticed while using.
+**Automatically trigger and reverse the time sensitvie schedule task with input detail accordingly**, will showcase method and use cases in below topic and things that need to be noticed while using.
 
 
-## Use Case
+## Available Methods
 
 * [OfferObject](#class-offergroupcursoroffer_id-kwargs)
   * [attributes](#instance-attributes)
