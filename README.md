@@ -13,7 +13,7 @@
   * [setup_period()](#function-setup_periodkwargs)
   * [push_cursor()](#function-push_cursorkwargs)
   * [deploy_cursor()](#function-deploy_cursor)
-* [GroupObject](#Group)
+* [GroupObject](#class-groupoffer_id-cashflow_group_id-percent-rate-kwargs)
 
 ### class _OfferGroupCursor(offer_id, **kwargs)_
 
@@ -214,7 +214,7 @@ cursor.deploy_cursor()
 None
 ```
 ---
-### class Group(offer_id, cashflow_group_id, percent, rate, **kwargs)
+### class _Group(offer_id, cashflow_group_id, percent, rate, **kwargs)_
 
 ```Python
 
