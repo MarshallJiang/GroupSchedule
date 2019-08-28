@@ -162,7 +162,7 @@ cursor.setup_default_value(percent=10, rate=5.5)
 ```
 ---
 
-### function _setup_period(**kwargs)_
+#### function _setup_period(**kwargs)_
 
 ###### setup start and end datetime for this ready-to-push configure.
 
