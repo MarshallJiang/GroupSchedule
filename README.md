@@ -213,7 +213,10 @@ None
 ```Python
 cursor.deploy_cursor()
 ```
-
+#### Return :
+```Python
+None
+```
 
 
 
