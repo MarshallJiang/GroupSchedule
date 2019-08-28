@@ -44,7 +44,7 @@ None
 |_offer_id_|_int_|_id of the initialized offer_|
 |_actived_from_|_string_|_datetime of this configure start_|
 |_actived_from_|_string_|_datetime of this configure end_|
-|_default_value_|_dict_|_default percentage and rate value of current or branch_at moment_|
+|_default_value_|_JSON string_|_default percentage and rate value of current or branch_at moment_|
 |_groups_|_list_|_list with groups object_|
 |_branch_at_|_datetime string_|_datetime of this object configure_|
 |_created_at_|_datetime string_|_datetime of creating this object_|
@@ -109,9 +109,13 @@ groups = cursor.group_display(text_filter='AU')
 |_cashflow_group_id_|_int_|_Required_|_id of cashflowgroup object_|
 |_percent_|_float_|_Optional_|_percent(%) type value_|
 |_rate_|_float_|_Optional_|_rate($) type value_|
-|
+
 ```Python
 cursor.group_append(2000, percent=5.5, rate=30)
+```
+#### Return :
+```Python
+None
 ```
 ---
 
@@ -127,6 +131,10 @@ cursor.group_append(2000, percent=5.5, rate=30)
 ```Python
 cursor.group_remove(2000)
 ```
+#### Return :
+```Python
+None
+```
 ---
 
 #### function _setup_default_value(kwargs**)_
@@ -136,8 +144,22 @@ cursor.group_remove(2000)
 #### Parameters
 | Parameter | Type | Required | Description |
 |----|----|----|----|
-|_percent_|_int_|_Optional_|_percent(%) value, default as 0_|
-|_rate_|_int_|_Optional_|_rate($) value, default as 0_|
+|_percent_|_float_|_Optional_|_percent(%) value, default as 0_|
+|_rate_|_float_|_Optional_|_rate($) value, default as 0_|
+
+```Python
+cursor.setup_default_value(percent=10, rate=5.5)
+```
+#### Return :
+```Python
+#JSON format string
+'{
+  "max_payout": 5.5, 
+  "default_payout": 5.5, 
+  "max_percent_payout": 10, 
+  "percent_payout": 10
+  }'
+```
 
 
 ### setup_value
