@@ -23,7 +23,7 @@
 | Parameter | Type | Required | Description |
 |----|----|----|----|
 |_offer_id_|_int_|_Required_|_id of the offer which will be used to initialize the object with attributes_|
-|_branch_at_|_string_|_Optional_|_to get the offer setting in specific moment_|
+|_branch_at_|_datetime string_|_Optional_|_to get the offer configure in specific datetime (YYYY-mm-dd HH:MM:SS)_|
 
 ```Python
 from GroupSchedule import OfferGroupCursor
@@ -45,6 +45,11 @@ None
 |_actived_from_|_string_|_datetime of this configure start_|
 |_actived_from_|_string_|_datetime of this configure end_|
 |_groups_|_list_|_list with groups object_|
+|_branch_at_|_datetime string_|_datetime of this object configure_|
+|_created_at_|_datetime string_|_datetime of creating this object_|
+|_ptype_|_string_|_payout type of this object as following ```'cpa_percentage', 'cpa_rate', 'cpa_both' ```_|
+
+
 
 
 ---
@@ -122,6 +127,10 @@ cursor.group_append(2000, percent=5.5, rate=30)
 cursor.group_remove(2000)
 ```
 ---
+
+#### function _setup_default_value(kwargs**)_
+
+###### 
 
 ### setup_value
 
