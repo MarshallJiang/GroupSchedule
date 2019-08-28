@@ -15,7 +15,7 @@
   * [deploy_cursor()](#function-deploy_cursor)
 * [GroupObject](#Group)
 
-#### class _OfferGroupCursor(offer_id, **kwargs)_
+### class _OfferGroupCursor(offer_id, **kwargs)_
 
 #### Parameters :
 | Parameter | Type | Required | Description |
@@ -214,8 +214,8 @@ cursor.deploy_cursor()
 None
 ```
 ---
-#### Group
-###### Group Object could actually get created, since this library is providing solution on `Offer` configure setup automation, will skip the create part in case out of process.
-```
+### class Group
+
+```Python
 
 
