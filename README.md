@@ -85,19 +85,34 @@ groups = cursor.group_display(text_filter='AU')
 
 #### function _group_append(cashflow_group_id, kwargs**)_
 
-###### add group into cursor object and define its value, at least one kind of value need to be defined.
+###### add group into cursor object and define its value, at least one type of value need to be defined.
 
 #### Parameters :
 | Parameter | Type | Required | Description |
 |----|----|----|----|
 |_cashflow_group_id_|_int_|_Required_|_id of cashflowgroup object_|
-|_percent_|_float_|_Optional_|_percent(%) value_|
-|_rate_|_float_|_Optional_|_rate($) value_|
+|_percent_|_float_|_Optional_|_percent(%) type value_|
+|_rate_|_float_|_Optional_|_rate($) type value_|
 
 ```Python
 cursor.group_append(2000, percent=5.5, rate=30)
 ```
 ---
+
+#### function _group_remove(cashflow_group_id)_
+
+###### remove group from cursor object.
+
+#### Parameters :
+| Parameter | Type | Required | Description |
+|----|----|----|----|
+|_cashflow_group_id_|_int_|_Required_|_id of cashflowgroup object_|
+
+```Python
+cursor.group_remove(2000)
+```
+---
+
 ### setup_value
 
 *function* ___setup_default_value(kwargs**)___
