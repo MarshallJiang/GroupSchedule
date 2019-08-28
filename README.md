@@ -44,7 +44,7 @@ None
 |_offer_id_|_int_|_id of the initialized offer_|
 |_actived_from_|_string_|_datetime of this configure start_|
 |_actived_from_|_string_|_datetime of this configure end_|
-|_default_value_|_dict_|_percentage and rate value of current or branch_at moment_|
+|_default_value_|_dict_|_default percentage and rate value of current or branch_at moment_|
 |_groups_|_list_|_list with groups object_|
 |_branch_at_|_datetime string_|_datetime of this object configure_|
 |_created_at_|_datetime string_|_datetime of creating this object_|
