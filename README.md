@@ -22,8 +22,8 @@
 #### Parameters :
 | Parameter | Type | Required | Description |
 |----|----|----|----|
-|_offer_id_|_int_|_Required_|_Id of the offer which will be used to initialize the object with attributes_|
-|_branch_at_|_string_|_Optional_|_To get the offer setting in specific moment_|
+|_offer_id_|_int_|_Required_|_id of the offer which will be used to initialize the object with attributes_|
+|_branch_at_|_string_|_Optional_|_to get the offer setting in specific moment_|
 
 ```Python
 from GroupSchedule import OfferGroupCursor
@@ -41,9 +41,9 @@ None
 #### Instance Attributes
 | Attributes | Type | Description |
 |----|----|----|
-|_offer_id_|_int_|Id of the initialized offer_|
-|_actived_from_|_string_|_Datetime of this configure start_|
-|_actived_from_|_string_|_Datetime of this configure end_|
+|_offer_id_|_int_|_id of the initialized offer_|
+|_actived_from_|_string_|_datetime of this configure start_|
+|_actived_from_|_string_|_datetime of this configure end_|
 |_groups_|_list_|_list with groups object_|
 
 
@@ -56,9 +56,9 @@ None
 #### Parameters :
 | Parameter | Type | Required | Description |
 |----|----|----|----|
-|_text_filter_|_string_|_Optional_|_Key for group name search_|
-|_value_filter_|_string_|_Optional_|_Key for group value search_|
-|_return_object_|_string_|_Optional_|_Return list with eligible groups_|
+|_text_filter_|_string_|_Optional_|_key for group name search_|
+|_value_filter_|_string_|_Optional_|_key for group value search_|
+|_return_object_|_string_|_Optional_|_return list with eligible groups_|
 
 ```Python
 groups = cursor.group_display(text_filter='AU')
