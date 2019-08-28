@@ -43,7 +43,7 @@ None
 |_actived_from_|_string_|_datetime of this configure start_|
 |_actived_from_|_string_|_datetime of this configure end_|
 |_default_value_|_JSON string_|_default percentage and rate value of current or branch_at moment_|
-|_groups_|_list_|_list with groups object_|
+|_groups_|_list_|_list with [groups](#class-groupoffer_id-cashflow_group_id-percent-rate-kwargs) object_|
 |_branch_at_|_datetime string_|_datetime of this object configure_|
 |_created_at_|_datetime string_|_datetime of creating this object_|
 |_ptype_|_string_|_payout type of this object as following `'cpa_percentage', 'cpa_rate', 'cpa_both' `_|
