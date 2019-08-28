@@ -6,7 +6,7 @@
 
 * [OfferObject](#class-offergroupcursoroffer_id-kwargs)
   * [group_display()](#function-group_displaykwargs)
-  * [group_append()](#function-group_appendkwargs)
+  * [group_append()](#function-group_appendcashflow_group_id-kwargs)
   * [group_remove()](#function-group_removecashflow_group_id)
   * setup_rules
   * save_task
