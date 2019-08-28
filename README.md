@@ -171,7 +171,16 @@ cursor.setup_default_value(percent=10, rate=5.5)
 |----|----|----|----|
 |_actived_from_|_datetime string_|_Required_|_start date of this configure_|
 |_actived_to_|_datetime string_|_Required_|_end date of this configure_|
-|_is_base_|_Boolean_|_Optional_|_define an enternal configure for others fallback to, default as false_|
+|_is_base_|_Boolean_|_Optional_|_define an enternal configure for others fallback to, default as false. if True, actived_from and actived_to will be auto adjust into min and max datetime value_|
+
+```Python
+# set specific time range for this configure.
+cursor.setup_period(actived_from='2019-01-01 00:00:00', actived_to='2019-01-31 23:59:59')
+
+# set baseline for this object to have every configure fallback to
+cursor.setup_period(is_base=True)
+```
+
 
 
 
