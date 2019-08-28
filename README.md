@@ -208,7 +208,7 @@ None
 ---
 #### function _deploy_cursor()_
 
-###### deploy the configure into platform, prioritize configure by `created_at`, the latest will be used for deployment.
+###### deploy the configure into platform, prioritize configure by `created_at`, the latest will be used for deployment
 
 ```Python
 cursor.deploy_cursor()
