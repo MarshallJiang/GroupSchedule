@@ -72,7 +72,7 @@ groups = cursor.group_display(text_filter='AU')
 
 #### Return :
 ```Python
-# Dictionary in list
+# dictionary in list
 [{'name': 'AU',
   'description': 'AU Group',
   'affiliates': [],
@@ -94,7 +94,7 @@ groups = cursor.group_display(text_filter='AU')
   'rate': None,
   'follow': 1}]
   
-  # Group object in list if return_object=True
+  # group object in list if return_object=True
   [GroupSchedule.Group]
 ```
 ---
@@ -174,7 +174,7 @@ cursor.setup_default_value(percent=10, rate=5.5)
 |_is_base_|_Boolean_|_Optional_|_define an enternal configure for others fallback to, default as `False`. if `True`, actived_from and actived_to will be auto adjust into min and max datetime value_|
 
 ```Python
-# set specific time range for this configure.
+# set specific time range for this configure
 cursor.setup_period(actived_from='2019-01-01 00:00:00', actived_to='2019-01-31 23:59:59')
 
 # set baseline for this object to have every configure fallback to
