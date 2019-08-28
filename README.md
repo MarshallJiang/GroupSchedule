@@ -5,6 +5,7 @@
 ## Use Case
 
 * [OfferObject](#class-offergroupcursoroffer_id-kwargs)
+  * [attributes](#instance-attributes)
   * [group_display()](#function-group_displaykwargs)
   * [group_append()](#function-group_appendcashflow_group_id-kwargs)
   * [group_remove()](#function-group_removecashflow_group_id)
@@ -37,6 +38,14 @@ cursor = OfferGroupCursor(1544, branch_at='2019-01-01 18:00:00')
 ```Python
 None
 ```
+#### Instance Attributes
+| Attributes | Type | Description |
+|----|----|----|
+|_offer_id_|_int_|Id of the initialized offer_|
+|_actived_from_|_string_|_Datetime of this configure start_|
+|_actived_from_|_string_|_Datetime of this configure end_|
+|_groups_|_list_|_list with groups object_|
+
 
 ---
 
