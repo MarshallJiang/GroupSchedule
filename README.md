@@ -12,6 +12,7 @@
   * [setup_default_value()](#function-setup_default_valuekwargs)
   * [setup_period()](#function-setup_periodkwargs)
   * [push_cursor()](#function-push_cursorkwargs)
+  * [deploy_cursor()](#function-deploy_cursor)
   
 ### structure
 
@@ -187,7 +188,7 @@ None
 ```
 ---
 
-### fuction _push_cursor(**kwargs)_
+#### fuction _push_cursor(**kwargs)_
 
 ###### push the configure into mysql database
 
@@ -196,10 +197,25 @@ None
 |----|----|----|----|
 |_utc_| _int_ | _Optional_ | _push the configuration into database and wait for activation_ |
 
+```Python
+cursor.push_cursor()
+```
+
 #### Return :
 ```Python
 None
 ```
+---
+#### function _deploy_cursor()_
+
+###### deploy the configure into platform, prioritize configure by `created_at`, the latest will be used for deployment.
+
+```Python
+cursor.deploy_cursor()
+```
+
+
+
 
 
 
