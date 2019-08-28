@@ -217,5 +217,13 @@ None
 ### class _Group(offer_id, cashflow_group_id, percent, rate, **kwargs)_
 
 ```Python
+# we execute Group object from OfferCursor object, we don't really create one
 
+# index directly from OfferCursor attribute
+group = cursor.groups[0]
+
+# get from group_display
+groups = cursor.group_display(text_filter='A', return_object=True)
+group = groups[0]
+```
 
