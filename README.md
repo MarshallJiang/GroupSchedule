@@ -187,7 +187,7 @@ None
 ```
 ---
 
-### fuction _push_cursor(**kwargs)__ 
+### fuction _push_cursor(**kwargs)_
 
 ###### push the configure into mysql database
 
