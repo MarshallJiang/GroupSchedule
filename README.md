@@ -214,7 +214,7 @@ cursor.deploy_cursor()
 None
 ```
 ---
-### class Group
+### class Group(offer_id, cashflow_group_id, percent, rate, **kwargs)
 
 ```Python
 
