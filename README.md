@@ -11,13 +11,14 @@
   * [group_remove()](#function-group_removecashflow_group_id)
   * [setup_default_value()](#function-setup_default_valuekwargs)
   * [setup_period()](#function-setup_periodkwargs)
+  * [push_cursor()](#function-push_cursorkwargs)
   
 ### structure
 
 
 
 
-#### class _OfferGroupCursor(offer_id, kwargs**)_
+#### class _OfferGroupCursor(offer_id, **kwargs)_
 
 #### Parameters :
 | Parameter | Type | Required | Description |
@@ -55,7 +56,7 @@ None
 
 ---
 
-#### function _group_display(kwargs**)_
+#### function _group_display(**kwargs)_
 
 ###### Search groups by names or value and return dictionary information.
 
@@ -99,7 +100,7 @@ groups = cursor.group_display(text_filter='AU')
 ```
 ---
 
-#### function _group_append(cashflow_group_id, kwargs**)_
+#### function _group_append(cashflow_group_id, **kwargs)_
 
 ###### add group into cursor object and define its value, at least one type of value need to be defined.
 
@@ -137,7 +138,7 @@ None
 ```
 ---
 
-#### function _setup_default_value(kwargs**)_
+#### function _setup_default_value(**kwargs)_
 
 ###### setup default percent or rate for object
 
@@ -164,7 +165,7 @@ cursor.setup_default_value(percent=10, rate=5.5)
 
 #### function _setup_period(**kwargs)_
 
-###### setup start and end datetime for this ready-to-push configure.
+###### setup start and end datetime for this ready-to-push configure
 
 #### Parameters
 | Parameter | Type | Required | Description |
@@ -180,8 +181,25 @@ cursor.setup_period(actived_from='2019-01-01 00:00:00', actived_to='2019-01-31 2
 # set baseline for this object to have every configure fallback to
 cursor.setup_period(is_base=True)
 ```
+#### Return :
+```Python
+None
+```
+---
 
+### fuction _push_cursor(**kwargs)__ 
 
+###### push the configure into mysql database
+
+#### Parameters
+| Parameter | Type | Required | Description |
+|----|----|----|----|
+|_utc_| _int__ | _Optional_ | _push the configuration into database and wait for activation_ |
+
+#### Return :
+```Python
+None
+```
 
 
 
