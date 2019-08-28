@@ -9,8 +9,8 @@
   * [group_display()](#function-group_displaykwargs)
   * [group_append()](#function-group_appendcashflow_group_id-kwargs)
   * [group_remove()](#function-group_removecashflow_group_id)
-  * [setup_default_value()](#function-setup_default_value-kwargs)
-  * [setup_period()](#function-setup_period-kwargs)
+  * [setup_default_value()](#function-setup_default_valuekwargs)
+  * [setup_period()](#function-setup_periodkwargs)
   
 ### structure
 
@@ -162,7 +162,7 @@ cursor.setup_default_value(percent=10, rate=5.5)
 ```
 ---
 
-### setup_period(**kwargs)
+### function _setup_period(**kwargs)_
 
 ###### setup start and end datetime for this ready-to-push configure.
 
