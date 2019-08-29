@@ -228,7 +228,7 @@ group = groups[0]
 ```
 #### _setup_value(**kwargs)_
 
-setup percent or rate value for per group. for every declared value group, would be out of job prioritize once its configure is the highest
+setup percent or rate value for per group. for every value declared group, would be out of job prioritize once its configure is the highest
 
 #### Parameters
 | Parameter | Type | Required | Description |
