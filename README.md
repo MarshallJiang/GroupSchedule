@@ -55,7 +55,7 @@ None
 
 #### function _group_display(**kwargs)_
 
-###### Search groups by names or value and return dictionary information.
+Search groups by names or value and return dictionary information.
 
 #### Parameters :
 | Parameter | Type | Required | Description |
@@ -99,7 +99,7 @@ groups = cursor.group_display(text_filter='AU')
 
 #### function _group_append(cashflow_group_id, **kwargs)_
 
-###### add group into cursor object and define its value, at least one type of value need to be defined.
+add group into cursor object and define its value, at least one type of value need to be defined.
 
 #### Parameters :
 | Parameter | Type | Required | Description |
@@ -119,7 +119,7 @@ None
 
 #### function _group_remove(cashflow_group_id)_
 
-###### remove group from cursor object.
+remove group from cursor object.
 
 #### Parameters :
 | Parameter | Type | Required | Description |
@@ -137,7 +137,7 @@ None
 
 #### function _setup_default_value(**kwargs)_
 
-###### setup default percent or rate for object
+setup default percent or rate for object
 
 #### Parameters
 | Parameter | Type | Required | Description |
@@ -162,7 +162,7 @@ cursor.setup_default_value(percent=10, rate=5.5)
 
 #### function _setup_period(**kwargs)_
 
-###### setup start and end datetime for this ready-to-push configure
+setup start and end datetime for this ready-to-push configure
 
 #### Parameters
 | Parameter | Type | Required | Description |
@@ -186,7 +186,7 @@ None
 
 #### fuction _push_cursor(**kwargs)_
 
-###### push the configure into mysql database
+push the configure into mysql database
 
 #### Parameters
 | Parameter | Type | Required | Description |
@@ -204,7 +204,7 @@ None
 ---
 #### function _deploy_cursor()_
 
-###### deploy the configure into platform, prioritize configure by `created_at`, the latest will be used for deployment
+deploy the configure into platform, prioritize configure by `created_at`, the latest will be used for deployment
 
 ```Python
 cursor.deploy_cursor()
@@ -226,4 +226,11 @@ group = cursor.groups[0]
 groups = cursor.group_display(text_filter='A', return_object=True)
 group = groups[0]
 ```
+#### _setup_value(**kwargs)_
+
+setup percent or rate value for per group. for every declared value group, would be out of job prioritize once its configure is the highest
+| Parameter | Type | Required | Description |
+|----|----|----|----|
+|_percent_|_float_|_Optional_|_percent(%) value, default as 0_|
+|_rate_|_float_|_Optional_|_rate($) value, default as 0_|
 
