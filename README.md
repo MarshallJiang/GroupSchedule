@@ -229,6 +229,8 @@ group = groups[0]
 #### _setup_value(**kwargs)_
 
 setup percent or rate value for per group. for every declared value group, would be out of job prioritize once its configure is the highest
+
+#### Parameters
 | Parameter | Type | Required | Description |
 |----|----|----|----|
 |_percent_|_float_|_Optional_|_percent(%) value, default as 0_|
